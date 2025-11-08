@@ -172,7 +172,7 @@ const errorHandler = (error, request, response, next) => {
 
 app.use(errorHandler); // 마지막에 오류핸들러를 등록하는데 미들웨어랑 라우터도 정의된 이후로 정의
 
-const PORT = process.env.port;
+const PORT = process.env.PORT;
 app.listen(PORT, () => {
   console.log(`server 들어왔다 포트:${PORT}`);
 });
